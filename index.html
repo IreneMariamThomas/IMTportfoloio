@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #c1d59d, #1e473e); /* Sage and pine green */
+            background: linear-gradient(to right, #2F0B3A, #F9F6F2); /* Midnight Cherry red & off-white */
             color: #1E0233; /* Darker shade for better contrast */
             height: 100%;
             overflow-y: auto; /* Add scrollbar outside flexbox */
@@ -33,52 +33,153 @@
             left: 20px;
             padding: 10px 20px;
             border-radius: 5px;
-            background-color: #1e473e; /* Pine green */
+            background-color: #F9F6F2; /* off-white */
             font-weight: bold;
             font-size: 16px;
-            color: #c1d59d; /* Sage */
+            color: #2F0B3A; /* Midnight Cherry red */
         }
-        .cover-photo-upload {
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: #1e473e; /* Pine green */
-            color: #c1d59d; /* Sage */
-            text-align: center;
+        .cover {
+            background-color: #F9F6F2; /* off-white */
             border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Adjusted width */
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #2F0B3A; /* Midnight Cherry red */
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 36px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            color: #2F0B3A; /* Midnight Cherry red */
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2F0B3A; /* Midnight Cherry red */
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 25px; /* Increased padding */
+            margin: 0 20px; /* Increased margin */
+            border-radius: 5px;
+            background-color: #2F0B3A; /* Midnight Cherry red */
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .nav a:hover {
+            background-color: #6B1D59; /* Darker shade for hover */
+        }
+        .about-me {
+            margin-top: 20px; /* Reduced margin */
+            padding: 10px; /* Reduced padding */
+            background-color: #F9F6F2; /* off-white */
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Added shadow */
+            text-align: left;
+            width: 100%; /* Adjusted width */
+        }
+        .about-me h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 20px;
         }
-        .cover-photo-upload p {
-            margin: 0;
-            margin-bottom: 10px;
+        .about-me h2 i {
+            margin-right: 10px;
         }
-        .cover-photo-upload input[type="file"] {
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #c1d59d; /* Sage */
-            color: #1e473e; /* Pine green */
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
+        .profile-img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
         }
-        .cover-photo-upload input[type="file"]:hover {
-            background-color: #4a826e; /* Darker shade for hover */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #2F0B3A; /* Midnight Cherry red */
+            overflow: hidden;
+            background-image: url('OIP.jpg'); /* Set default background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .upload-btn {
+            margin-top: 10px;
+            background-color: #2F0B3A; /* Midnight Cherry red */
             color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        /* Rest of your CSS */
+        .upload-btn:hover {
+            background-color: #6B1D59; /* Darker shade for hover */
+        }
+        .event-container {
+            max-height: 400px; /* Increased height */
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        .event {
+            padding: 10px 20px;
+            background-color: #F9F6F2; /* off-white */
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .event h3 {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .event h3 i {
+            margin-right: 10px;
+        }
+        .personal-info {
+            background-color: #F9F6F2; /* off-white */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .personal-info h3 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #2F0B3A; /* Midnight Cherry red */
+        }
+        .personal-info h3 i {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <a href="#" class="bookmark">Professional Portfolio</a>
-        <div class="cover-photo-upload">
-            <p>Upload your cover photo here</p>
-            <input type="file" accept="image/*">
-        </div>
-        <!-- Rest of your content -->
         <div class="profile-img-container">
             <div class="profile-img"></div>
+            <input type="file" id="profile-upload" style="display: none;">
+            <button class="upload-btn" onclick="document.getElementById('profile-upload').click()">Upload Image</button>
         </div>
         <div class="personal-info">
             <h3><i class="fas fa-envelope"></i> Email: irenemariam70@gmail.com</h3>
