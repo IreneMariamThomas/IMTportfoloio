@@ -3,64 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irene Mariam Thomas - Product Documentation Specialist</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Irene Mariam Thomas - Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #c1d59d, #1e473e); /* Sage and pine green */
+            color: #1E0233; /* Darker shade for better contrast */
+            height: 100%;
+            overflow-y: auto; /* Add scrollbar outside flexbox */
+        }
+        .container {
+            width: 90%; /* Increased width */
+            max-width: 1200px; /* Added max-width */
+            margin: auto; /* Center align */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .bookmark {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #1e473e; /* Pine green */
+            font-weight: bold;
+            font-size: 16px;
+            color: #c1d59d; /* Sage */
+        }
+        .cover-photo-upload {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #1e473e; /* Pine green */
+            color: #c1d59d; /* Sage */
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .cover-photo-upload p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .cover-photo-upload input[type="file"] {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #c1d59d; /* Sage */
+            color: #1e473e; /* Pine green */
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .cover-photo-upload input[type="file"]:hover {
+            background-color: #4a826e; /* Darker shade for hover */
+            color: #fff;
+        }
+        /* Rest of your CSS */
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
+    <div class="container">
+        <a href="#" class="bookmark">Professional Portfolio</a>
+        <div class="cover-photo-upload">
+            <p>Upload your cover photo here</p>
+            <input type="file" accept="image/*">
+        </div>
+        <!-- Rest of your content -->
+        <div class="profile-img-container">
+            <div class="profile-img"></div>
+        </div>
+        <div class="personal-info">
+            <h3><i class="fas fa-envelope"></i> Email: irenemariam70@gmail.com</h3>
+            <h3><i class="fas fa-map-marker-alt"></i> Address: Bengaluru, India</h3>
+            <h3><i class="fas fa-briefcase"></i> Product Documentation Specialist, Wisetech Global India Pvt Ltd</h3>
+        </div>
+        <div class="cover">
             <h1>Irene Mariam Thomas</h1>
-            <p>Product Documentation Specialist</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h3>Technical Writer in the Supply Chain Domain</h3>
+            <div class="nav">
+                <a href="#"> <i class="fas fa-file-alt"></i> Resume</a>
+                <a href="#"> <i class="fas fa-address-book"></i> Contact</a>
+                <a href="#"> <i class="fas fa-file-alt"></i> Sample Documentation</a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/irene-mariam-thomas-714716208/" class="linkedin-btn"> <i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+            <div class="about-me">
+                <h2><i class="fas fa-pen-nib"></i> About Me</h2> <!-- Added writer icon -->
+                <p>Hey! I'm Irene Mariam Thomas, a Technical Writer in the Supply Chain Domain. Feel free to connect or take a look at my work if you want to know more about me. Thank You!!</p>
+            </div>
+            <div class="timeline">
+                <h2>My Career Timeline</h2>
+                <div class="event-container">
+                    <div class="event">
+                        <h3><i class="fas fa-user-graduate"></i> 2024, March</h3>
+                        <p>Promoted as Technical Documentation Analyst at Blume Global.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-user-graduate"></i> 2022, July</h3>
+                        <p>Joined Blume Global as Associate Technical Documentation Analyst.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-user-graduate"></i> 2022, June</h3>
+                        <p>Graduated from Mount Carmel College Autonomous, Bengaluru for Master of Arts in English Literature.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-briefcase"></i> 2021, October</h3>
+                        <p>Interned with Famezop Media as Content Executive.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-briefcase"></i> 2021, April - June</h3>
+                        <p>Interned with START UP MIND as Content Writer Intern.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-briefcase"></i> 2021, March - April</h3>
+                        <p>Interned with International MUN as Campus Ambassador.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-user-graduate"></i> 2020, March</h3>
+                        <p>Graduated Bachelor of Arts in English Literature, Communication and Journalism from Assumption College Autonomous, Changanacherry.</p>
+                    </div>
+                    <div class="event">
+                        <h3><i class="fas fa-newspaper"></i> 2019, December</h3>
+                        <p>Worked as a journalism intern in New Indian Express Cochin as a part of her Journalism Project.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a passionate Product Documentation Specialist with expertise in creating clear and concise documentation for software products.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Technical Writing</li>
-                <li>Documentation Management</li>
-                <li>Content Creation</li>
-                <li>Version Control (Git)</li>
-                <li>Collaboration Tools (e.g., Confluence)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <p>Previous experience as a Technical Writer at XYZ Inc. (2018-2022).</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: irenemariam@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/irene-mariam-thomas-714716208/">Irene Mariam Thomas</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Irene Mariam Thomas - Product Documentation Specialist</p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
