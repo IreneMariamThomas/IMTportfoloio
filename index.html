@@ -10,8 +10,8 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #2F0B3A, #F9F6F2); /* Midnight Cherry red & off-white */
-            color: #1E0233; /* Darker shade for better contrast */
+            background: linear-gradient(to right, #DCC2B6, #CED8D0); /* Color combination */
+            color: #333; /* Darker shade for better contrast */
             height: 100%;
             overflow-y: auto; /* Add scrollbar outside flexbox */
         }
@@ -33,13 +33,13 @@
             left: 20px;
             padding: 10px 20px;
             border-radius: 5px;
-            background-color: #F9F6F2; /* off-white */
+            background-color: #CED8D0; /* off-white */
             font-weight: bold;
             font-size: 16px;
-            color: #2F0B3A; /* Midnight Cherry red */
+            color: #333; /* Darker shade for better contrast */
         }
         .cover {
-            background-color: #F9F6F2; /* off-white */
+            background-color: #CED8D0; /* off-white */
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@
         h1 {
             font-size: 28px;
             margin-bottom: 10px;
-            color: #2F0B3A; /* Midnight Cherry red */
+            color: #DCC2B6; /* Midnight Cherry red */
             text-transform: uppercase;
             font-weight: bold;
         }
@@ -59,12 +59,12 @@
             font-size: 36px;
             margin-top: 30px;
             margin-bottom: 30px;
-            color: #2F0B3A; /* Midnight Cherry red */
+            color: #DCC2B6; /* Midnight Cherry red */
         }
         h3 {
             font-size: 24px;
             margin-bottom: 20px;
-            color: #2F0B3A; /* Midnight Cherry red */
+            color: #DCC2B6; /* Midnight Cherry red */
         }
         .nav {
             margin-top: 20px;
@@ -75,7 +75,7 @@
             padding: 10px 25px; /* Increased padding */
             margin: 0 20px; /* Increased margin */
             border-radius: 5px;
-            background-color: #2F0B3A; /* Midnight Cherry red */
+            background-color: #DCC2B6; /* Midnight Cherry red */
             transition: all 0.3s ease;
             font-weight: bold;
             letter-spacing: 1px;
@@ -83,12 +83,12 @@
             font-size: 16px;
         }
         .nav a:hover {
-            background-color: #6B1D59; /* Darker shade for hover */
+            background-color: #9BA7AB; /* Darker shade for hover */
         }
         .about-me {
             margin-top: 20px; /* Reduced margin */
             padding: 10px; /* Reduced padding */
-            background-color: #F9F6F2; /* off-white */
+            background-color: #CED8D0; /* off-white */
             border-radius: 10px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Added shadow */
             text-align: left;
@@ -113,23 +113,57 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            border: 5px solid #2F0B3A; /* Midnight Cherry red */
+            border: 5px solid #DCC2B6; /* Midnight Cherry red */
             overflow: hidden;
-            background-image: url('OIP.jpg'); /* Set default background image */
+            background-image: url('OIP.jpg'); /* Set background image */
             background-size: cover;
             background-position: center;
         }
-        .upload-btn {
-            margin-top: 10px;
-            background-color: #2F0B3A; /* Midnight Cherry red */
-            color: #fff;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 5px;
-            cursor: pointer;
+        .linkedin {
+            margin-top: 20px; /* Adjusted margin */
+            margin-bottom: 20px;
         }
-        .upload-btn:hover {
-            background-color: #6B1D59; /* Darker shade for hover */
+        .linkedin a {
+            text-decoration: none;
+            color: #DCC2B6; /* Midnight Cherry red */
+            padding: 10px 25px; /* Increased padding */
+            margin: 0 20px; /* Increased margin */
+            border-radius: 5px;
+            background-color: #CED8D0; /* off-white */
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .linkedin a:hover {
+            background-color: #9BA7AB; /* Darker shade for hover */
+            color: #fff;
+        }
+        .about-me p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+        }
+        .linkedin-btn {
+            background-color: #CED8D0; /* off-white */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 16px;
+            cursor: pointer;
+            color: #DCC2B6; /* Midnight Cherry red */
+        }
+        .linkedin-btn i {
+            margin-right: 5px;
+        }
+        .linkedin-btn:hover {
+            background-color: #9BA7AB; /* Darker shade for hover */
+            color: #fff;
         }
         .event-container {
             max-height: 400px; /* Increased height */
@@ -138,7 +172,7 @@
         }
         .event {
             padding: 10px 20px;
-            background-color: #F9F6F2; /* off-white */
+            background-color: #CED8D0; /* off-white */
             border-radius: 5px;
             margin-bottom: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -153,12 +187,12 @@
             margin-right: 10px;
         }
         .personal-info {
-            background-color: #F9F6F2; /* off-white */
+            background-color: #CED8D0; /* off-white */
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
             text-align: left;
-            width: 100%;
+            width: 90%; /* Adjusted width */
             margin-bottom: 20px;
         }
         .personal-info h3 {
@@ -166,7 +200,7 @@
             align-items: center;
             margin-bottom: 10px;
             font-size: 20px;
-            color: #2F0B3A; /* Midnight Cherry red */
+            color: #DCC2B6; /* Midnight Cherry red */
         }
         .personal-info h3 i {
             margin-right: 10px;
@@ -178,8 +212,6 @@
         <a href="#" class="bookmark">Professional Portfolio</a>
         <div class="profile-img-container">
             <div class="profile-img"></div>
-            <input type="file" id="profile-upload" style="display: none;">
-            <button class="upload-btn" onclick="document.getElementById('profile-upload').click()">Upload Image</button>
         </div>
         <div class="personal-info">
             <h3><i class="fas fa-envelope"></i> Email: irenemariam70@gmail.com</h3>
