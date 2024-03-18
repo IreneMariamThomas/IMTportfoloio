@@ -20,48 +20,47 @@
             max-width: 1200px; /* Added max-width */
             margin: auto; /* Center align */
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             padding: 20px;
             box-sizing: border-box;
             text-align: center;
         }
-        .bookmark {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #A0AECD; /* Updated color */
-            font-weight: bold;
-            font-size: 16px;
-            color: #000000; /* Updated font color */
-        }
-        .cover {
+        .sidebar {
             background-color: #A0AECD; /* Updated color */
             border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            width: 100%; /* Adjusted width */
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            width: 20%; /* Sidebar width */
+            margin-right: 20px; /* Space between sidebar and content */
+            height: 100vh; /* Height till the end of the page */
+            overflow-y: auto; /* Add scrollbar */
         }
-        h1, h2, h3 {
-            margin: 0;
+        .sidebar h3 {
+            margin-bottom: 10px;
+            font-size: 15px; /* Reduced font size */
+            color: #000000; /* Updated font color */
         }
-        h1 {
+        .sidebar h3 i {
+            margin-right: 10px;
+        }
+        .content {
+            width: 80%; /* Content width */
+            background-color: #A0AECD; /* Updated color */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+        .content h1 {
             font-size: 28px;
             margin-bottom: 10px;
             color: #000000; /* Updated font color */
             text-transform: uppercase;
             font-weight: bold;
         }
-        h2 {
-            font-size: 36px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            color: #000000; /* Updated font color */
-        }
-        h3 {
+        .content h3 {
             font-size: 24px;
             margin-bottom: 20px;
             color: #000000; /* Updated font color */
@@ -102,22 +101,6 @@
         }
         .about-me h2 i {
             margin-right: 10px;
-        }
-        .profile-img-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid #000000; /* Updated font color */
-            overflow: hidden;
-            background-image: url('OIP.jpg'); /* Set background image */
-            background-size: cover;
-            background-position: center;
         }
         .linkedin {
             margin-top: 20px; /* Adjusted margin */
@@ -186,39 +169,17 @@
         .event h3 i {
             margin-right: 10px;
         }
-        .personal-info {
-            background-color: #A0AECD; /* Updated color */
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-            text-align: left;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-        .personal-info h3 {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            font-size: 20px;
-            color: #000000; /* Updated font color */
-        }
-        .personal-info h3 i {
-            margin-right: 10px;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="#" class="bookmark">Professional Portfolio</a>
-        <div class="profile-img-container">
-            <div class="profile-img"></div>
-        </div>
-        <div class="personal-info">
+        <div class="sidebar">
             <h3><i class="fas fa-envelope"></i> Email: irenemariam70@gmail.com</h3>
             <h3><i class="fas fa-map-marker-alt"></i> Address: Bengaluru, India</h3>
             <h3><i class="fas fa-briefcase"></i> Product Documentation Specialist, Wisetech Global India Pvt Ltd</h3>
         </div>
-        <div class="cover">
+        <div class="content">
+            <a href="#" class="bookmark">Professional Portfolio</a>
             <h1>Irene Mariam Thomas</h1>
             <h3>Technical Writer in the Supply Chain Domain</h3>
             <div class="nav">
